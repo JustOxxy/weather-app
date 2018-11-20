@@ -5,6 +5,8 @@
 body {
   font-family: "Open Sans", serif;
   background: linear-gradient(to right, #e67e22, #e74c3c);
+  margin: 0px;
+  padding: 0px;
 }
 
 .main {
@@ -12,7 +14,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 700px;
-  background: #fff;
   box-shadow: 0px 13px 40px -13px rgba(0, 0, 0, 0.75);
   width: 80%;
   margin: 20px auto;
@@ -100,6 +101,10 @@ button:active {
   outline: none;
 }
 
+button:focus {
+  outline: none;
+}
+
 .weather__info {
   width: 60%;
   font-size: 20px;
@@ -130,7 +135,7 @@ button:active {
   font-weight: 200;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 720px) {
   .main,
   .form {
     display: flex;
@@ -192,6 +197,10 @@ button:active {
   .weather__value {
     font-weight: 400;
     font-size: 24px;
+  }
+
+  .form-container {
+    overflow: auto;
   }
 
   button {
